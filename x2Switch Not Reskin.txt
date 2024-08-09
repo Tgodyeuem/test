@@ -27,8 +27,8 @@ local user
 local tag
 local userinfo = {}
 
-_G.Key = ""
-_G.Discord = ""
+_G.Key = "11341521236999999"
+_G.Discord = "1134152123689476188"
 
 if game.CoreGui:FindFirstChild(_G.Key .."," .. _G.Discord) then
 	game.CoreGui:FindFirstChild(_G.Key .."," .. _G.Discord):Destroy()
