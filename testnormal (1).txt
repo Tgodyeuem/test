@@ -1,4 +1,4 @@
- wait(10)
+wait(10)
     while true do repeat until false end
 end
 
