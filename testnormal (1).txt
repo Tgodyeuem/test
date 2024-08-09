@@ -1,4 +1,4 @@
-_G.Key = "NORMALHUB_oc8S5F";
+_G.Key = "NORMALHUB";
 _G.DiscordID = "1134152123689476188";
 if Fluxus then
     local AntiCrackTool = 0;
