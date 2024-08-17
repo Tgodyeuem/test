@@ -1,3 +1,23 @@
+print('fuxk')
+
+if not game:IsLoaded() then game.Loaded:Wait() end
+local fask = task 
+setreadonly(fask,false)
+
+local RunService =  game:GetService("RunService")
+local myWait = function(n)
+	if not n then
+		return RunService.Heartbeat:Wait()
+	else
+		local lasted = 0
+		repeat
+			lasted = lasted + RunService.Heartbeat:Wait()
+		until lasted >= n
+		return lasted
+	end
+end
+fask.wait = myWait
+
 local id = game.PlaceId if id == 2753915549 then World1 = true; elseif id == 4442272183 then World2 = true; elseif id == 7449423635 then World3 = true; else game:Shutdown() end;
 
 do -- Team Script
@@ -1716,7 +1736,7 @@ end
 
 local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/Jxereas/UI-Libraries/main/notification_gui_library.lua", true))()
 
-local Luxury = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
+local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
 local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/SaveManager.lua"))()
 local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/InterfaceManager.lua"))()
 
@@ -1733,21 +1753,16 @@ local Window = Luxury:CreateWindow({
 local Tabs = {
 	Main = Window:AddTab({ Title = "Main", Icon = "" }),
 	Stats = Window:AddTab({ Title = "Stats", Icon = "" }),
-
 	FindFirst = Window:AddTab({ Title = "First Sea", Icon = "" }),
 	FindSec = Window:AddTab({ Title = "Second Sea", Icon = "" }),
 	FindThird = Window:AddTab({ Title = "Third Sea", Icon = "" }),
-
 	FullMirage = Window:AddTab({ Title = "Full Moon", Icon = "" }),
 	V4Race = Window:AddTab({ Title = "Race", Icon = "" }),
 	SeaEvent = Window:AddTab({ Title = "Sea Event", Icon = "" }),
-
 	Players = Window:AddTab({ Title = "Players", Icon = "" }),
 	Visuals = Window:AddTab({ Title = "Visuals", Icon = "" }),
     Shop = Window:AddTab({ Title = "Shop", Icon = "" }),
-
 	Misc = Window:AddTab({ Title = "Misc", Icon = "" }),
-
 	Settings = Window:AddTab({ Title = "Settings", Icon = "settings" })
 }
 
