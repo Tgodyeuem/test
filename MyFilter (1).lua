@@ -1720,7 +1720,7 @@ local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/
 local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/SaveManager.lua"))()
 local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/InterfaceManager.lua"))()
 
-local Window = Luxury:CreateWindow({
+local Window = Fluent:CreateWindow({
 	Title = "Luxury Hub | Premium",
 	SubTitle = "by xZc",
 	TabWidth = 160,
@@ -1741,12 +1741,12 @@ local Tabs = {
 	SeaEvent = Window:AddTab({ Title = "Sea Event", Icon = "" }),
 	Players = Window:AddTab({ Title = "Players", Icon = "" }),
 	Visuals = Window:AddTab({ Title = "Visuals", Icon = "" }),
-    Shop = Window:AddTab({ Title = "Shop", Icon = "" }),
+	Shop = Window:AddTab({ Title = "Shop", Icon = "" }),
 	Misc = Window:AddTab({ Title = "Misc", Icon = "" }),
 	Settings = Window:AddTab({ Title = "Settings", Icon = "settings" })
 }
 
-local Settings = Luxury.Options
+local Settings = Fluent.Options
 
 Tabs.Main:AddParagraph({
 	Title = "Main",
