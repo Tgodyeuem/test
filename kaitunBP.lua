@@ -237,20 +237,20 @@ local NoLoopDuplicate6 = false
 
 local TableSwapMob = {}
 local AllMobCFrame = {}
-local SwapMobNoLoop = false
+local SwapMobNoLoop = true
 local ErrorCount = 0
-local NearPlayer = false
+local NearPlayer = true
 
-local BlackLegDone = false
-local FishmanKarateDone = false
-local ElectroDone = false
-local DragonDone = false
+local BlackLegDone = true
+local FishmanKarateDone = true
+local ElectroDone = true
+local DragonDone = true
 
-local DeathStepDone = false
-local SharkmanKarateDone = false
-local SuperhumanDone = false
-local ElectricClawDone = false
-local DargonTalonDone = false
+local DeathStepDone = true
+local SharkmanKarateDone = true
+local SuperhumanDone = true
+local ElectricClawDone = true
+local DargonTalonDone = true
 
 local UserInputService = game:GetService("UserInputService")
 local Players = game:GetService("Players")
@@ -265,16 +265,16 @@ local GetQuest = game:GetService("Players").LocalPlayer.PlayerGui.Main.Quest
 local MyLevel = game.Players.LocalPlayer.Data.Level.Value
 
 local countre = 0
-local AreBuyKabcha = false
-local AreRedeem = false
+local AreBuyKabcha = true
+local AreRedeem = true
 local TypeWeapon = "Melee"
 local JustHave = {}
 
 local MaxLevel = 2550
-local SubQuest = false
-local DeSubQuest = false
+local SubQuest = true
+local DeSubQuest = true
 local countskiperror = 0
-local HelpCup = false
+local HelpCup = true
 
 if not LPH_OBFUSCATED then
 	LPH_JIT = (function(...) return ... end)
