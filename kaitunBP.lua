@@ -239,18 +239,18 @@ local TableSwapMob = {}
 local AllMobCFrame = {}
 local SwapMobNoLoop = true
 local ErrorCount = 0
-local NearPlayer = true
+local NearPlayer = false
 
-local BlackLegDone = true
-local FishmanKarateDone = true
-local ElectroDone = true
-local DragonDone = true
+local BlackLegDone = false
+local FishmanKarateDone = false
+local ElectroDone = false
+local DragonDone = false
 
-local DeathStepDone = true
-local SharkmanKarateDone = true
-local SuperhumanDone = true
-local ElectricClawDone = true
-local DargonTalonDone = true
+local DeathStepDone = false
+local SharkmanKarateDone = false
+local SuperhumanDone = false
+local ElectricClawDone = false
+local DargonTalonDone = false
 
 local UserInputService = game:GetService("UserInputService")
 local Players = game:GetService("Players")
