@@ -265,16 +265,16 @@ local GetQuest = game:GetService("Players").LocalPlayer.PlayerGui.Main.Quest
 local MyLevel = game.Players.LocalPlayer.Data.Level.Value
 
 local countre = 0
-local AreBuyKabcha = true
-local AreRedeem = true
+local AreBuyKabcha = false
+local AreRedeem = false
 local TypeWeapon = "Melee"
 local JustHave = {}
 
 local MaxLevel = 2550
-local SubQuest = true
-local DeSubQuest = true
+local SubQuest = false
+local DeSubQuest = false
 local countskiperror = 0
-local HelpCup = true
+local HelpCup = false
 
 if not LPH_OBFUSCATED then
 	LPH_JIT = (function(...) return ... end)
