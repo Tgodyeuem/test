@@ -9148,12 +9148,12 @@ spawn(function()
             end
         end
     end)
-    Toggle = Tabs.stack:AddToggle("MyToggle", {Title = "Auto CDK┊New Update", Default = false })
+    Toggle = Tabs.stack:AddToggle("MyToggle", {Title = "Auto CDK", Default = false })
 
     Toggle:OnChanged(function(Value)
         Auto_Cursed_Dual_Katana = Value
         end)   
-        local function Auto_Cursed_Dual_Katana()
+  local function Auto_Cursed_Dual_Katana()
   local MasteryYama, MasteryTushita = 1, 1
   local GoodProgress, EvilProgress = 0, 0
   local YamaQuest_1, YamaQuest_2, YamaQuest_3
