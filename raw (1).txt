@@ -9148,12 +9148,12 @@ spawn(function()
             end
         end
     end)
-    Toggle = Tabs.stack:AddToggle("MyToggle", {Title = "Auto CDK┊New Update", Default = false })
+    Toggle = Tabs.stack:AddToggle("MyToggle", {Title = "Auto CDK┊New Update", Default = _G.Auto_Cursed_Dual_Katana })
 
     Toggle:OnChanged(function(Value)
-        Auto_Cursed_Dual_Katana = Value
+       _G.Auto_Cursed_Dual_Katana = Value
+        saveSettings()
         end)
-        
         spawn(function()
         while wait() do
             pcall(function()
