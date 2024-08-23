@@ -9151,7 +9151,7 @@ spawn(function()
     Toggle = Tabs.stack:AddToggle("MyToggle", {Title = "Auto CDK", Default = false })
 
     Toggle:OnChanged(function(Value)
-        Auto_Cursed_Dual_Katana = Value
+        _G.Auto_Cursed_Dual_Katana = Value
         end)   
   local function Auto_Cursed_Dual_Katana()
   local MasteryYama, MasteryTushita = 1, 1
