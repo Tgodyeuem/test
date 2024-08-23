@@ -9209,7 +9209,7 @@ spawn(function()
   
   -- Final Quest
   task.spawn(function()
-    while getgenv().AutoCursedDualKatana do task.wait()
+    while getgenv().Auto_Cursed_Dual_Katana do task.wait()
       if FinalQuest then
         
       end
@@ -9218,7 +9218,7 @@ spawn(function()
   
   -- Yama Quest 1
   task.spawn(function()
-    while getgenv().AutoCursedDualKatana do task.wait()
+    while getgenv().Auto_Cursed_Dual_Katana do task.wait()
       if YamaQuest_1 then
         if not VerifyTool("Yama") then
           FireRemote("LoadItem", "Yama")
@@ -9237,7 +9237,7 @@ spawn(function()
   
   -- Yama Quest 2
   task.spawn(function()
-    while getgenv().AutoCursedDualKatana do task.wait()
+    while getgenv().Auto_Cursed_Dual_Katana do task.wait()
       if YamaQuest_2 then
         local Enemie = GetYamaEnemies()
         
@@ -9251,7 +9251,7 @@ spawn(function()
   
   -- Yama Quest 3
   task.spawn(function()
-    while getgenv().AutoCursedDualKatana do task.wait()
+    while getgenv().Auto_Cursed_Dual_Katana do task.wait()
       if YamaQuest_3 then
         
       end
@@ -9264,7 +9264,7 @@ spawn(function()
     
     local Boat1, Boat2, Boat3 = false, false, false
     
-    while getgenv().AutoCursedDualKatana do task.wait()
+    while getgenv().Auto_Cursed_Dual_Katana do task.wait()
       if TushitaQuest_1 then
         local plrPP = Player and Player.Character and Player.Character.PrimaryPart
         local NPC = NPCs:FindFirstChild("Luxury Boat Dealer")
@@ -9294,7 +9294,7 @@ spawn(function()
   
   -- Tushita Quest 2
   task.spawn(function()
-    while getgenv().AutoCursedDualKatana do task.wait()
+    while getgenv().Auto_Cursed_Dual_Katana do task.wait()
       if TushitaQuest_2 then
         
       end
@@ -9303,7 +9303,7 @@ spawn(function()
   
   -- Tushita Quest 3
   task.spawn(function()
-    while getgenv().AutoCursedDualKatana do task.wait()
+    while getgenv().Auto_Cursed_Dual_Katana do task.wait()
       if TushitaQuest_3 then
         
       end
@@ -9311,7 +9311,7 @@ spawn(function()
   end)
   
   task.spawn(function()
-    while getgenv().AutoCursedDualKatana do task.wait()
+    while getgenv().Auto_Cursed_Dual_Katana do task.wait()
       if VerifyTool("Yama") then
         local NewMastery = GetToolLevel("Yama")
         if tonumber(NewMastery) then
@@ -9327,7 +9327,7 @@ spawn(function()
   end)
   
   task.spawn(function()
-    while getgenv().AutoCursedDualKatana do task.wait()
+    while getgenv().Auto_Cursed_Dual_Katana do task.wait()
       if FarmMastery then
         if MasteryYama >= 350 and MasteryTushita >= 350 then
           break
@@ -9362,7 +9362,7 @@ spawn(function()
       return tonumber(NumberStr)
     end
     
-    while getgenv().AutoCursedDualKatana do task.wait(0.5)
+    while getgenv().Auto_Cursed_Dual_Katana do task.wait(0.5)
       local Progress = Remote:InvokeServer("CDKQuest", "Progress")
       
       GoodProgress = ConvertNumber(Progress.Good)
@@ -9370,7 +9370,7 @@ spawn(function()
     end
   end)
     
-  while getgenv().AutoCursedDualKatana do task.wait()
+  while getgenv().Auto_Cursed_Dual_Katana do task.wait()
     local Door = Cursed:FindFirstChild("Breakable")
     
     if MasteryTushita < 350 and MasteryYama < 350 then
