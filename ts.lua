@@ -219,9 +219,10 @@
                 game:GetService("VirtualInputManager"):SendKeyEvent(false,"LeftControl",false,game)
             end)
         end 
-        local Window =
-            Fluent:CreateWindow(
-            {
+local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
+local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/SaveManager.lua"))()
+local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/InterfaceManager.lua"))()
+        local Window = Fluent:CreateWindow({
                 Title = "Tsuo Hub Update 20",
                 SubTitle = "Dev By VMH09",
                 TabWidth = 160,
